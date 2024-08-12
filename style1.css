@@ -1,0 +1,621 @@
+:root {
+  --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-100: hsl(13, 100%, 96%);
+
+  --clr-primary-400: hsl(228, 39%, 23%);
+
+  --clr-neutral-100: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(0 0% 0%);
+
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.9375rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-nav: var(--fs-500);
+  --fs-button: var(--fs-300);
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-500);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+
+    --fs-nav: var(--fs-300);
+  }
+}
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes */
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+.text-accent-400 {
+  color: var(--clr-accent-400);
+}
+.text-accent-100 {
+  color: var(--clr-accent-100);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+} 
+
+
+
+
+
+
+
+
+/* MY PROJECT */
+
+
+
+
+
+
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  font-family: var(--ff-primary);
+  padding:0rem 6rem;
+  /* background-image:image(file:///C:/Users/AZ/Desktop/ASSIGNMENT%20No.10/landing-page-challenge-main/landing-page-challenge-main/images/bg-tablet-pattern.svg); */
+}
+.container img{
+  image
+}
+.HEADER{
+  padding: 3.2rem 0rem;
+  justify-content: space-around;
+  display: flex;
+  /* border: 0.4rem solid brown; */
+  align-items: center;
+  color: var(--clr-primary-400);
+}
+
+
+.LHEDER{
+}
+
+.MHEADER ol{
+  display: flex;
+  list-style: none;
+  gap:1rem;
+  font-size: var(--fs-body);
+}
+.MHEADER ol li{
+color: hsl(228, 39%, 23%);
+}
+
+.MHEADER ol li:hover{
+  color: hsl(228, 56%, 45%);
+}
+
+.PRIMARY BUTTON{
+background-color:hsl(12, 88%, 59%);
+border:none;
+color: white;
+border-radius: 01rem;
+height: 2.2rem;
+width: 8rem;
+font-size: var(--fs-button);
+}
+.PRIMARY BUTTON:hover{
+  background-color:hsl(12, 60%, 40%);
+}
+
+/* HERO1 STYLING */
+
+
+.HERO{
+  justify-content: space-around;
+  display: flex;
+  /* border: 0.4rem solid brown; */
+  color: var(--clr-primary-400);
+  padding-top: 5rem;
+}
+
+.LHERO{
+  gap:2rem;
+  width: 50%;
+  padding-left: 7.5%;
+  display: flex;
+  flex-direction: column; 
+  padding-top: 25px;
+  
+}
+
+.LHERO h1{
+  line-height: 1.1;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-primary-heading);
+  color: hsl(228, 39%, 23%);
+}
+
+.LHERO pre{
+  font-weight:  400, 500, 700;
+  color: rgb(79, 143, 122);
+}
+.LHERO button{
+background-color:hsl(12, 88%, 59%);
+border:none;
+color: white;
+border-radius: 01rem;
+height: 2.2rem;
+width: 8rem;
+font-size: var(--fs-button);
+}
+
+.LHERO button:hover{
+  background-color:hsl(12, 60%, 40%);
+}
+
+.RHERO{
+  width: 50%;
+}
+.RHERO img{
+  height: 28rem;
+}
+
+
+/* HERO2 STYLING */
+
+
+.HERO2{
+  justify-content: space-around;
+  display: flex;
+  /* border: 0.4rem solid brown;  */
+  color: var(--clr-primary-400);
+  padding-top: 5rem;
+}
+.LHERO2  { 
+  gap:3rem;
+  width: 50%;
+  padding-left: 7.5%;
+  display: flex;
+  flex-direction: column; 
+  padding-top: 25px;
+ 
+}  
+
+.LHERO2 h1{
+  line-height: 1.1;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-secondary-heading);
+  color: hsl(228, 39%, 23%);
+}
+
+.LHERO2 pre{
+  font-weight:  400, 500, 700;
+  color: rgb(79, 143, 122);
+}
+
+.RHERO2 {
+  width: 50%; 
+  line-height: 1.1;
+}
+.RHERO2 h1{
+  color: hsl(228, 39%, 23%); 
+  margin-bottom: 1.4rem;
+  font-size: var(--fs-);
+  font-weight: var(--fw-bold);
+}
+
+.RHERO2 pre{
+  font-weight:  400, 500, 700;
+  color: rgb(79, 143, 122);
+  margin-bottom: 2rem;
+}
+
+
+/* CARD SECTION  */
+
+body {
+  counter-reset: heading; 
+}
+
+.RHERO2 h1:before {
+  counter-increment: heading; 
+  content: counter(heading) ".0 ";
+  font-size: larger;
+  background-color:hsl(12, 88%, 59%); 
+  color: aliceblue ;
+  border-radius: 01rem;
+  border: none;
+  padding: 0.2em 0.5em;
+  margin-right: 01em; 
+}
+.T{
+  /* border: 0.4rem solid brown; */
+  padding-top: 5rem;
+}
+
+.H1{
+  font-size: var(--fs-secondary-heading);
+  font-family: var(--ff-heading);
+  font-weight: bold;
+  text-align: center;
+  color: hsl(228, 39%, 23%);
+  
+}
+
+.CARD{
+  display: flex;
+margin-top: 5.5rem;
+padding-bottom: 5.5rem;
+}
+.CARD .BOX1{
+  background-color: rgba(204, 195, 195, 0.249);
+  margin-right: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+/* .CARD .BOX1 h1{
+  color: hsl(228, 39%, 23%);color: hsl(228, 39%, 23%);
+} */
+.CARD .BOX2{
+ 
+  background-color: rgba(204, 195, 195, 0.249);
+  display: flex;
+  flex-direction: column;
+  
+}
+.CARD .BOX3{
+
+  background-color: rgba(204, 195, 195, 0.249);
+  margin-left: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.CARD h1{
+  color: hsl(228, 39%, 23%);color: hsl(228, 39%, 23%);V
+  margin-top: 10PX ;
+  text-align: center;
+  font-size: var(--fs-700);
+  font-weight: bold;
+  font-family: var(--ff-heading);
+}
+.CARD p{
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--ff-body);
+  font-weight:  400, 500, 700;
+  color: rgb(79, 143, 122);
+}
+.CARD img{
+  width: 20%;
+  position:relative;
+  left: 40%;
+}
+.TESTBUTTON button{
+  Background-color:hsl(12, 88%, 59%);
+  border:none;
+  color: white;
+  border-radius: 01rem;
+  height: 2.2rem;
+  width: 8rem;
+  font-size: var(--fs-button);
+  margin-left: 45%;
+}
+
+.TESTBUTTON button:hover{
+  background-color:hsl(12, 60%, 40%);
+}
+
+
+
+ .HERO3{
+  height:  35%;
+  justify-content: space-around;
+  display: flex;
+  /* border: 0.4rem solid brown;  */
+  color: var(--clr-primary-400);
+  margin-top: 10.5rem;
+  Background-color:hsl(12, 88%, 59%);
+  align-items: center;
+
+}
+.HERO3 h1{
+  padding:left ;
+  width: 65%;
+  font-size: var(--fs-secondary-heading);
+  font-family: var(--ff-heading);
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.HERO3 button{
+  color:hsl(12, 88%, 59%);
+  background-color: aliceblue;
+  border-radius: 01rem;
+  height: 2.2rem;
+  width: 8rem;
+  font-size: var(--fs-button);
+  border: none ;
+}
+
+.HERO3 button:hover{
+background-color: hsl(228, 39%, 23%);
+color: aliceblue;
+}
+
+
+/* footer section  */
+
+.footer{
+  height: 12rem;
+  background-color: hsl(228, 39%, 23%);
+  justify-content: space-around;
+  display: flex;
+  /* border: 0.4rem solid brown; */
+  align-items: center;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-heading);
+  }
+
+.footer1 .images{
+  display: flex;
+  gap: 1.1rem;
+  padding-top: 3.5rem;
+}
+
+
+.footer2 ol{
+  font-family: var(--ff-heading);
+  font-size: var(--fs-body);
+  list-style: none;
+  color: aliceblue;
+  line-height: 2rem ;
+}
+  .footer2 ol li{
+    color: aliceblue;
+  }
+
+  .footer2 ol li:hover{
+    color:hsl(12, 88%, 59%);
+  }
+
+.footer3 ol{
+  font-family: var(--ff-heading);
+  font-size: var(--fs-body);
+  list-style: none;
+  line-height: 2rem ;
+  margin-bottom: 1.9rem;
+}
+.footer3 ol li{
+  color: aliceblue;
+}
+
+.footer3 ol li:hover{
+  color:hsl(12, 88%, 59%);
+}
+
+
+.footer4 .inbox{
+  font-family: var(--ff-heading);
+  display: flex;
+}
+.footer4 .inbox  .B1{
+  border-radius: 01rem;
+  height: 2.2rem;
+  width: 10rem;
+  border: none;
+  align-content: center;
+ 
+}
+
+.footer4 .inbox  .B2{
+  border-radius: 01rem;
+  Background-color:hsl(12, 88%, 59%);
+  border:none;
+  color: aliceblue;
+  height: 2.2rem;
+width: 4rem;
+}
+
+.footer4 .inbox  .B2:hover{
+  background-color:hsl(12, 60%, 40%);
+}
+
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 375px) {
+  
+  .container {
+    padding: 1rem;
+  }
+  .HEADER {
+    flex-wrap: wrap;
+  }
+  .HERO {
+    flex-direction: column-reverse;
+  }
+  .HERO2{
+    flex-direction: column;
+  }
+   .RHERO2 h1{
+    width: 100%;
+  }
+  
+  .CARD {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .LHERO {
+    width: 100%;
+    padding-left: 0;
+  }
+  .RHERO {
+    width: 100%;
+  }
+  .RHERO img {
+    height: 15rem;
+  }
+  .CARD .BOX1, .CARD .BOX2, .CARD .BOX3 {
+    margin: 1rem;
+  }
+  .TESTBUTTON button {
+    margin-left: 0;
+  }
+  .HERO3 {
+   height: 20rem; 
+    flex-direction: column;
+  }
+  .footer{
+    height: 30rem; 
+    flex-direction: column;
+  }
+  .footer1 {
+    margin-bottom: 2rem;
+  }
+  .footer2 ol, .footer3 ol {
+    line-height: 1.5rem;
+  }
+}
