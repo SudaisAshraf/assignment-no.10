@@ -1,0 +1,80 @@
+body {
+    background-color:black;
+  }
+@media (max-width:375px) {
+  
+
+  /* Style the hamburger menu container */
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Style the hamburger icon */
+.hamburger-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-icon span:first-child {
+  transform: translateY(-10px);
+}
+
+.hamburger-icon span:last-child {
+  transform: translateY(10px);
+}
+
+/* Style the menu items */
+.menu-items {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-items li a:hover {
+  color: #666;
+}
+
+/* Toggle the menu items on click */
+.hamburger-menu:hover .hamburger-icon span {
+  background-color: #666;
+}
+
+.hamburger-menu:hover .menu-items {
+  display: block;
+}
+
+.hamburger-menu:hover .hamburger-icon span:first-child {
+  transform: translateY(0);
+}
+
+.hamburger-menu:hover .hamburger-icon span:last-child {
+  transform: translateY(0);
+}
+}
